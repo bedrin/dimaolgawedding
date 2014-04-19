@@ -1,5 +1,202 @@
-<html>
-<body>
-Hello, world!
-</body>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bootstrap 101 Template</title>
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <style>
+            body {
+                width: 100%;
+                height: 100%;
+
+                background-image: url('background.png');
+                background-size: cover;
+                background-color: rgb(237, 216, 199);
+                background-position: 50% 0%;
+                background-repeat: no-repeat no-repeat;
+            }
+
+            .structure {
+                width: 980px;
+                position: relative;
+                margin: 0 auto;
+            }
+
+            .header {
+                width: 980px;
+                min-height: 300px;
+                height: 300px;
+            }
+
+            .left {
+                position: absolute;
+                top: 57px;
+            }
+
+            .left_content {
+                background-color: rgb(159, 192, 200);
+                width: 185px;
+                height: 55px;
+                left: 56px;
+                top: -40px;
+                position: relative;
+            }
+
+            .left_subcontent {
+                color: rgb(255, 255, 255);
+                font-family: georgia, palatino, 'book antiqua', 'palatino linotype', serif;
+                font-size: 21px;
+                font-style: italic;
+                margin: 0 auto;
+                width: 115px;
+                height: 32px;
+                top: 12px;
+                position: relative;
+                text-align: center;
+                border-top: 1px solid white;
+                border-bottom: 1px solid white;
+            }
+
+            .right {
+                position: absolute;
+                top: 57px;
+                left: 736px;
+            }
+
+            .right_content {
+                background-color: rgb(159, 192, 200);
+                width: 185px;
+                height: 55px;
+                left: 0px;
+                top: -40px;
+                position: relative;
+            }
+
+            .right img {
+                position: relative;
+                left: 173px;
+            }
+
+            .right_subcontent {
+                color: rgb(255, 255, 255);
+                font-family: georgia, palatino, 'book antiqua', 'palatino linotype', serif;
+                font-size: 21px;
+                font-style: italic;
+                margin: 0 auto;
+                width: 115px;
+                height: 32px;
+                top: 12px;
+                position: relative;
+                text-align: center;
+                border-top: 1px solid white;
+                border-bottom: 1px solid white;
+            }
+
+            .headers {
+                width: 495px;
+                position: absolute;
+                top: 25px;
+                left: 241px;
+                text-align: center;
+            }
+
+            .headers h1 {
+                margin-top: 0px;
+                margin-bottom: 0px;
+                padding-top: 0px;
+                padding-bottom: 0px;
+            }
+
+            h1.black {
+                color: rgb(119, 115, 115);
+                font-family: georgia, palatino, 'book antiqua', 'palatino linotype', serif;
+                font-size: 72px;
+            }
+
+            h1.white {
+                color: rgb(255, 255, 255);
+                font-family: georgia, palatino, 'book antiqua', 'palatino linotype', serif;
+                font-size: 90px;
+            }
+
+            .dashed_line {
+                width: 100%;
+                height: 0px;
+                border-bottom: 3px dashed white;
+                top: 16px;
+                position: absolute;
+            }
+
+            .double_line {
+                border-top: 3px solid white;
+                border-bottom: 1px solid white;
+                width: 100%;
+                height: 9px;
+                min-height: 9px;
+                top: 209px;
+                position: absolute;
+                padding: 5px 0 0;
+            }
+
+            .content {
+                width: 980px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="structure">
+            <div class="header">
+                <div class="dashed_line"></div>
+                <div class="left">
+                    <img src="left.png"/>
+                    <div class="left_content">
+                        <div class="left_subcontent">
+                            06.09.2014
+                        </div>
+                    </div>
+                </div>
+                <div class="headers">
+                    <h1 class="black">DIMA & OLGA</h1>
+                    <h1 class="white">WEDDING</h1>
+                </div>
+                <div class="right">
+                    <img src="right.png"/>
+                    <div class="right_content">
+                        <div class="right_subcontent">
+                            Petersburg
+                        </div>
+                    </div>
+                </div>
+                <div class="double_line"></div>
+            </div>
+            <div class="content">
+                Lorem ipsum
+            </div>
+            <div class="content">
+                <div class="double_line"></div>
+                Lorem ipsum
+            </div>
+        </div>
+
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    </body>
 </html>
