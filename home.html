@@ -39,8 +39,8 @@
 
             .header {
                 width: 980px;
-                min-height: 300px;
-                height: 300px;
+                min-height: 200px;
+                height: 200px;
             }
 
             .left {
@@ -148,14 +148,40 @@
                 width: 100%;
                 height: 9px;
                 min-height: 9px;
-                top: 209px;
-                position: absolute;
                 padding: 5px 0 0;
             }
 
             .content {
                 width: 980px;
             }
+
+            .reverse_double_line {
+                border-bottom: 3px solid white;
+                border-top: 1px solid white;
+                width: 100%;
+                height: 9px;
+                min-height: 9px;
+                padding: 5px 0 0;
+            }
+
+            .navbar-nav li {
+                height: 35px;
+            }
+
+            .navbar-nav a {
+                line-height: 35px;
+                color: rgb(145, 180, 189);
+                font-family: georgia, palatino, 'book antiqua', 'palatino linotype', serif;
+                font-size: 16px;
+                padding-top: 8px !important;
+                padding-bottom: 8px !important;
+            }
+
+            .navbar-nav a:hover, .navbar-nav a:focus  {
+                background-color: transparent !important;
+                color: rgb(159, 192, 200);
+            }
+
         </style>
     </head>
     <body>
@@ -182,13 +208,20 @@
                         </div>
                     </div>
                 </div>
-                <div class="double_line"></div>
-            </div>
-            <div class="content">
-                Lorem ipsum
             </div>
             <div class="content">
                 <div class="double_line"></div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="reverse_double_line"></div>
+            </div>
+            <div class="content">
+
                 Lorem ipsum
             </div>
         </div>
