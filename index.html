@@ -1,225 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Bootstrap 101 Template</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 101 Template</title>
 
-<!-- Bootstrap -->
-<link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
-<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-<!--[if lt IE 9]>
-<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-<![endif]-->
-<style>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
 
-body {
-width: 100%;
-height: 100%;
-background-image: url('background.png');
-background-size: cover;
-background-color: rgb(237, 216, 199);
-background-position: 50% 0%;
-background-repeat: no-repeat no-repeat;
-}
+        body {
+            width: 100%;
+            height: 100%;
+            background-image: url('background.png');
+            background-size: cover;
+            background-color: rgb(237, 216, 199);
+            background-position: 50% 0%;
+            background-repeat: no-repeat no-repeat;
+        }
 
-.dashed {
-height: 0px;
-border-bottom: 3px dashed white;
-}
+        .dashed {
+            height: 0px;
+            border-bottom: 3px dashed white;
+        }
 
-.thin-top-thick-bottom {
-border-top: 1px solid white;
-border-bottom: 3px solid white;
-width: 100%;
-height: 9px;
-min-height: 9px;
-padding: 5px 0 0;
-}
+        .thin-top-thick-bottom {
+            border-top: 1px solid white;
+            border-bottom: 3px solid white;
+            width: 100%;
+            height: 9px;
+            min-height: 9px;
+            padding: 5px 0 0;
+        }
 
-.thin-bottom-thick-top {
-border-top: 3px solid white;
-border-bottom: 1px solid white;
-width: 100%;
-height: 9px;
-min-height: 9px;
-padding: 5px 0 0;
-}
+        .thin-bottom-thick-top {
+            border-top: 3px solid white;
+            border-bottom: 1px solid white;
+            width: 100%;
+            height: 9px;
+            min-height: 9px;
+            padding: 5px 0 0;
+        }
 
-.top-buffer {
-margin-top: 16px;
-}
+        .top-buffer {
+            margin-top: 16px;
+        }
 
-.top-buffer-22 {
-margin-top: 22px;
-}
+        .top-buffer-22 {
+            margin-top: 22px;
+        }
 
-.hidden-xs h1.dima-olga {
-color: rgb(119, 115, 115);
-font-family: georgia, palatino, 'book antiqua', 'palatino linotype', serif;
-font-size: 78px;
-text-transform: uppercase;
-margin-top: 13px;
-margin-bottom: 0;
-}
+        .hidden-xs h1.dima-olga {
+            color: rgb(119, 115, 115);
+            font-family: georgia, palatino, 'book antiqua', 'palatino linotype', serif;
+            font-size: 78px;
+            text-transform: uppercase;
+            margin-top: 13px;
+            margin-bottom: 0;
+        }
 
-.hidden-md h1.dima-olga {
-color: rgb(119, 115, 115);
-font-family: georgia, palatino, 'book antiqua', 'palatino linotype', serif;
-font-size: 32px;
-text-transform: uppercase;
-margin-top: 0;
-margin-bottom: 0;
-}
+        .hidden-md h1.dima-olga {
+            color: rgb(119, 115, 115);
+            font-family: georgia, palatino, 'book antiqua', 'palatino linotype', serif;
+            font-size: 32px;
+            text-transform: uppercase;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
 
-.hidden-xs h1.wedding {
-color: rgb(255, 255, 255);
-font-family: georgia, palatino, 'book antiqua', 'palatino linotype', serif;
-font-size: 90px;
-text-transform: uppercase;
-margin-top: -13px;
-margin-bottom: 6px;
-}
+        .hidden-xs h1.wedding {
+            color: rgb(255, 255, 255);
+            font-family: georgia, palatino, 'book antiqua', 'palatino linotype', serif;
+            font-size: 90px;
+            text-transform: uppercase;
+            margin-top: -13px;
+            margin-bottom: 6px;
+        }
 
-.hidden-md h1.wedding {
-color: rgb(255, 255, 255);
-font-family: georgia, palatino, 'book antiqua', 'palatino linotype', serif;
-font-size: 21px;
-text-transform: uppercase;
-margin-top: -13px;
-}
-
-
-
-.valign {
-float: none;
-display: table-cell !important;
-vertical-align: middle;
-height: 150px;
-}
-
-.left-bow {
-background-image: url('left.png');
-background-repeat: no-repeat;
-background-position: left top;
-padding-left: 56px;
-padding-top: 11px;
-height: 60px;
-}
-
-.right-bow {
-background-image: url('right.png');
-background-repeat: no-repeat;
-background-position: right top;
-padding-right: 56px;
-padding-top: 11px;
-height: 60px;
-}
-
-.left-bow.right-bow {
-background-image: url('left.png'), url('right.png');
-background-position: left top, right top;
-}
-
-.blue-background {
-background-color: rgb(159, 192, 200);
-padding: 10px;
-width: 195px;
-}
-
-.white-border-top-bottom {
-border-top: 1px solid white;
-border-bottom: 1px solid white;
-height: 30px;
-color: rgb(255, 255, 255);
-font-family: georgia, palatino, 'book antiqua', 'palatino linotype', serif;
-font-size: 21px;
-font-style: italic;
-width: 135px;
-display: inline-block;
-margin: 0;
-}
-
-.white-text {
-color: rgb(255, 255, 255);
-font-family: georgia, palatino, 'book antiqua', 'palatino linotype', serif;
-font-size: 20px;
-font-style: italic;
-margin: 0;
-}
-
-.fill-width {
-width: 100%;
-}
-
-.nav a {
-line-height: 35px;
-color: rgb(145, 180, 189);
-font-family: georgia, palatino, 'book antiqua', 'palatino linotype', serif;
-font-size: 16px;
-padding-top: 8px !important;
-padding-bottom: 8px !important;
-}
-
-.nav a:hover, .nav a:focus  {
-background-color: transparent !important;
-color: rgb(159, 192, 200);
-}
+        .hidden-md h1.wedding {
+            color: rgb(255, 255, 255);
+            font-family: georgia, palatino, 'book antiqua', 'palatino linotype', serif;
+            font-size: 21px;
+            text-transform: uppercase;
+            margin-top: -13px;
+        }
 
 
-.item h2 {
-color: rgb(119, 115, 115);
-font-family: georgia, palatino, 'book antiqua', 'palatino linotype', serif;
-font-size: 40px;
-font-style: italic;
-}
 
-.item h2 .dash {
-border-top: 1px solid rgb(119, 115, 115);
-border-bottom: 3px solid rgb(119, 115, 115);
-width: 39px;
-height: 9px;
-min-height: 9px;
-margin: 5px;
-margin-bottom: 9px;
-display: inline-block;
-}
+        .valign {
+            float: none;
+            display: table-cell !important;
+            vertical-align: middle;
+            height: 150px;
+        }
 
-#homepage .link-decorator {
-height: 60px;
-width: 188px;
-background-color: rgb(175, 188, 107);
-padding: 10px;
-display: inline-block;
-}
+        .left-bow {
+            background-image: url('left.png');
+            background-repeat: no-repeat;
+            background-position: left top;
+            padding-left: 56px;
+            padding-top: 11px;
+            height: 60px;
+        }
 
-#homepage .link-decorator a {
-width: 168px;
-height: 40px;
-display: inline-block;
-padding: 8px;
-border: 1px solid white;
-font-family: georgia, palatino, 'book antiqua', 'palatino linotype', serif;
-font-size: 18px;
-color: white;
--o-transition:.5s;
--ms-transition:.5s;
--moz-transition:.5s;
--webkit-transition:.5s;
-transition:.5s;
-}
+        .right-bow {
+            background-image: url('right.png');
+            background-repeat: no-repeat;
+            background-position: right top;
+            padding-right: 56px;
+            padding-top: 11px;
+            height: 60px;
+        }
 
-#homepage .link-decorator a:hover {
-text-decoration: none;
-border: 1px solid rgb(175, 188, 107);
-color: rgb(119, 115, 115);
-}
+        .left-bow.right-bow {
+            background-image: url('left.png'), url('right.png');
+            background-position: left top, right top;
+        }
 
-</style>
+        .blue-background {
+            background-color: rgb(159, 192, 200);
+            padding: 10px;
+            width: 195px;
+        }
+
+        .white-border-top-bottom {
+            border-top: 1px solid white;
+            border-bottom: 1px solid white;
+            height: 30px;
+            color: rgb(255, 255, 255);
+            font-family: georgia, palatino, 'book antiqua', 'palatino linotype', serif;
+            font-size: 21px;
+            font-style: italic;
+            width: 135px;
+            display: inline-block;
+            margin: 0;
+        }
+
+        .white-text {
+            color: rgb(255, 255, 255);
+            font-family: georgia, palatino, 'book antiqua', 'palatino linotype', serif;
+            font-size: 20px;
+            font-style: italic;
+            margin: 0;
+        }
+
+        .fill-width {
+            width: 100%;
+        }
+
+        .nav a {
+        line-height: 35px;
+        color: rgb(145, 180, 189);
+        font-family: georgia, palatino, 'book antiqua', 'palatino linotype', serif;
+        font-size: 16px;
+        padding-top: 8px !important;
+        padding-bottom: 8px !important;
+        }
+
+        .nav a:hover, .nav a:focus  {
+        background-color: transparent !important;
+        color: rgb(159, 192, 200);
+        }
+
+
+        .item h2 {
+            color: rgb(119, 115, 115);
+            font-family: georgia, palatino, 'book antiqua', 'palatino linotype', serif;
+            font-size: 40px;
+            font-style: italic;
+        }
+
+        .item h2 .dash {
+            border-top: 1px solid rgb(119, 115, 115);
+            border-bottom: 3px solid rgb(119, 115, 115);
+            width: 39px;
+            height: 9px;
+            min-height: 9px;
+            margin: 5px;
+            margin-bottom: 9px;
+            display: inline-block;
+        }
+
+        #homepage .link-decorator {
+            height: 60px;
+            width: 188px;
+            background-color: rgb(175, 188, 107);
+            padding: 10px;
+            display: inline-block;
+        }
+
+        #homepage .link-decorator a {
+            width: 168px;
+            height: 40px;
+            display: inline-block;
+            padding: 8px;
+            border: 1px solid white;
+            font-family: georgia, palatino, 'book antiqua', 'palatino linotype', serif;
+            font-size: 18px;
+            color: white;
+            -o-transition:.5s;
+            -ms-transition:.5s;
+            -moz-transition:.5s;
+            -webkit-transition:.5s;
+            transition:.5s;
+        }
+
+        #homepage .link-decorator a:hover {
+            text-decoration: none;
+            border: 1px solid rgb(175, 188, 107);
+            color: rgb(119, 115, 115);
+        }
+
+    </style>
 </head>
 <body>
 
