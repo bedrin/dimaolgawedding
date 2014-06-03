@@ -8,6 +8,7 @@
 
 <!-- Bootstrap -->
 <link href="css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="css/flipclock.css">
 
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -304,6 +305,7 @@ box-shadow: 0 10px 20px rgba(0,0,0,.7);
 </style>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="js/flipclock.min.js"></script>
 </head>
 <body>
 
@@ -463,6 +465,29 @@ box-shadow: 0 10px 20px rgba(0,0,0,.7);
                             <div class="col-md-6" style="height: 30px; border-right: 3px dashed white; border-bottom: 3px dashed white;"></div>
                             <div class="col-md-6"></div>
                         </div>
+
+                        <div class="clock" style="margin:2em;"></div>
+<script>
+			$(document).ready(function() {
+
+				// Grab the current date
+				var currentDate = new Date();
+
+				// Set some date in the future. In this case, it's always Jan 1
+				var futureDate  = new Date(Date.UTC(2014, 8, 6 , 13, 0, 0));
+
+				// Calculate the difference in seconds between the future and current date
+				var diff = futureDate.getTime() / 1000 - currentDate.getTime() / 1000;
+
+				// Instantiate a coutdown FlipClock
+				clock = $('.clock').FlipClock(diff, {
+					clockFace: 'DailyCounter',
+					countdown: true,
+					showSeconds: true
+				});
+			});
+
+</script>
 
                     </div>
                 </div>
