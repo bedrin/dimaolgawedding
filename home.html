@@ -531,7 +531,8 @@ var photoCount = 16;
     if(limit > 0) {
       for(var i = 0; i < limit; i++) {
                 $('<a>', {
-                    href : '',
+                    href : response.data[i].link,
+                    target : '_blank',
                     title : ''
                 }).append(
                     $('<img>', {
