@@ -456,6 +456,19 @@ box-shadow: 0 10px 20px rgba(0,0,0,.7);
                         <h2><div class="dash"></div>Gallery<div class="dash"></div></h2>
                         <div class="row">
                             <div class="col-xs-1" style="padding: 0"></div>
+                            <div class="col-xs-10" style="padding:0">
+                                <div class="center" style="width: 300px">
+                                    <div class="polaroid-images">
+                                        <a href="http://instagram.com/p/nqssS0nI7A/" target="_blank" title="">
+                                            <img src="http://scontent-b.cdninstagram.com/hphotos-xpf1/t51.2885-15/1516624_698463556879600_1251986920_a.jpg" alt="Давайте мы расскажем немного о себе: во-первых, мы любим путешествовать. Это мы на фоне собора в Праге." title="Давайте мы расскажем немного о себе: во-первых, мы любим путешествовать. Это мы на фоне собора в Праге." style="width: 250px; height: 250px;">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-1" style="padding: 0"></div>
+                        </div>
+                        <!--<div class="row">
+                            <div class="col-xs-1" style="padding: 0"></div>
                             <div class="col-xs-10" style="padding: 0; width: 426px">
                                 <div style="background-image: url('frame.png'); width: 426px; height: 300px; background-repeat: no-repeat;">
                                     <div style="width: 351px; height: 261px; overflow: hidden; margin-left: 37px; padding-top: 39px">
@@ -464,7 +477,7 @@ box-shadow: 0 10px 20px rgba(0,0,0,.7);
                                 </div>
                             </div>
                             <div class="col-xs-1" style="padding: 0"></div>
-                        </div>
+                        </div>-->
                         <div class="row">
                             <div class="col-md-6" style="height: 30px; border-right: 3px dashed white; border-bottom: 3px dashed white;"></div>
                             <div class="col-md-6"></div>
@@ -491,27 +504,6 @@ box-shadow: 0 10px 20px rgba(0,0,0,.7);
                             <div class="col-md-6" style="height: 30px; border-right: 3px dashed white; border-bottom: 3px dashed white;"></div>
                             <div class="col-md-6"></div>
                         </div>
-<script>
-			$(document).ready(function() {
-
-				// Grab the current date
-				var currentDate = new Date();
-
-				// Set some date in the future. In this case, it's always Jan 1
-				var futureDate  = new Date(Date.UTC(2014, 8, 6 , 13, 0, 0));
-
-				// Calculate the difference in seconds between the future and current date
-				var diff = futureDate.getTime() / 1000 - currentDate.getTime() / 1000;
-
-				// Instantiate a coutdown FlipClock
-				clock = $('.clock').FlipClock(diff, {
-					clockFace: 'DailyCounter',
-					countdown: true,
-					showSeconds: false
-				});
-			});
-
-</script>
 
                     </div>
                 </div>
@@ -560,51 +552,17 @@ box-shadow: 0 10px 20px rgba(0,0,0,.7);
                         <div class="dashed" style="margin-top:41px"></div>
                     </div>
                 </div>
-                <!--<div class="top-buffer-22"></div>-->
-                <div id="polaroid-images" class="polaroid-images">
+
+                <div class="row">
+                    <div class="col-xs-1" style="padding: 0"></div>
+                    <div class="col-xs-10" style="padding:0; padding-top: 25px; padding-bottom: 25px;">
+                        <div id="polaroid-images" class="polaroid-images center">
+                        </div>
+                    </div>
+                    <div class="col-xs-1" style="padding: 0"></div>
                 </div>
 
-                <script>
-var tag = "dimaolgawedding";
-var id = "7a9d62031e53419b86a6479856986ce4";
-var photoCount = 16;
 
-                    $.ajax({
-  type: "GET",
-  dataType: "jsonp",
-  cache: false,
-  url: "https://api.instagram.com/v1/tags/" + tag + "/media/recent?client_id=" + id,
-  success: function(response) {
-    var length = response.data != 'undefined' ? response.data.length : 0;
-    var limit = photoCount != null && photoCount < length ? photoCount : length;
-    if(limit > 0) {
-      for(var i = 0; i < limit; i++) {
-                $('<a>', {
-                    href : response.data[i].link,
-                    target : '_blank',
-                    title : ''
-                }).append(
-                    $('<img>', {
-                      src: response.data[i].images.low_resolution.url,
-                      alt: response.data[i].caption.text,
-                      title: response.data[i].caption.text,
-                      width: 250,
-                      height: 250
-                    })
-                ).appendTo($("#polaroid-images"));
-      }
-    }
-  }
-});
-                </script>
-
-                <p>
-                    Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
-                    Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
-                    Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
-                    Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
-                    Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
-                </p>
             </div>
 
             <div class="item" id="accommodations">
@@ -720,5 +678,63 @@ var photoCount = 16;
 
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
+
+<script>
+			$(document).ready(function() {
+
+				// Grab the current date
+				var currentDate = new Date();
+
+				// Set some date in the future. In this case, it's always Jan 1
+				var futureDate  = new Date(Date.UTC(2014, 8, 6 , 13, 0, 0));
+
+				// Calculate the difference in seconds between the future and current date
+				var diff = futureDate.getTime() / 1000 - currentDate.getTime() / 1000;
+
+				// Instantiate a coutdown FlipClock
+				clock = $('.clock').FlipClock(diff, {
+					clockFace: 'DailyCounter',
+					countdown: true,
+					showSeconds: false
+				});
+			});
+
+</script>
+
+<script>
+var tag = "dimaolgawedding";
+var id = "7a9d62031e53419b86a6479856986ce4";
+var photoCount = 16;
+
+                    $.ajax({
+  type: "GET",
+  dataType: "jsonp",
+  cache: false,
+  url: "https://api.instagram.com/v1/tags/" + tag + "/media/recent?client_id=" + id,
+  success: function(response) {
+    var length = response.data != 'undefined' ? response.data.length : 0;
+    var limit = photoCount != null && photoCount < length ? photoCount : length;
+    if(limit > 0) {
+      for(var i = 0; i < limit; i++) {
+                $('<a>', {
+                    href : response.data[i].link,
+                    target : '_blank',
+                    title : ''
+                }).append(
+                    $('<img>', {
+                      src: response.data[i].images.low_resolution.url,
+                      alt: response.data[i].caption.text,
+                      title: response.data[i].caption.text,
+                      width: 250,
+                      height: 250
+                    })
+                ).appendTo($("#polaroid-images"));
+      }
+    }
+  }
+});
+                </script>
+
+
 </body>
 </html>
