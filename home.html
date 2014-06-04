@@ -304,9 +304,21 @@ box-shadow: 0 10px 20px rgba(0,0,0,.7);
 
 
 .center {
-float: none;
-margin-left: auto;
-margin-right: auto;
+    margin: 0 auto;
+}
+
+.flip-clock-label {
+    color: rgb(119, 115, 115) !important;
+    font-family: georgia, palatino, 'book antiqua', 'palatino linotype', serif;
+    font-size: 20px;
+    font-style: italic;
+    text-align: center;
+}
+
+.clock {
+    margin-top: 25px;
+    margin-bottom: 20px;
+    width: 460px;
 }
 
 </style>
@@ -474,13 +486,7 @@ margin-right: auto;
                         </div>
 
                         <h2><div class="dash"></div>Countdown<div class="dash"></div></h2>
-                        <div class="row text-center">
-                            <!--<div class="col-xs-1" style="padding: 0"></div>
-                            <div class="col-xs-10" style="padding: 0; width: 460px">-->
-                                <div class="clock" style="width: 460px; margin: 0 auto"></div>
-                            <!--</div>
-                            <div class="col-xs-1" style="padding: 0"></div>-->
-                        </div>
+                        <div class="clock center"></div>
                         <div class="row">
                             <div class="col-md-6" style="height: 30px; border-right: 3px dashed white; border-bottom: 3px dashed white;"></div>
                             <div class="col-md-6"></div>
