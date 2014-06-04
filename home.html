@@ -474,8 +474,12 @@ margin-right: auto;
                         </div>
 
                         <h2><div class="dash"></div>Countdown<div class="dash"></div></h2>
-                        <div class="center" style="zoom: 0.7;">
-                        <div class="clock" style="margin:2em"></div>
+                        <div class="row text-center">
+                            <!--<div class="col-xs-1" style="padding: 0"></div>
+                            <div class="col-xs-10" style="padding: 0; width: 460px">-->
+                                <div class="clock" style="width: 460px; margin: 0 auto"></div>
+                            <!--</div>
+                            <div class="col-xs-1" style="padding: 0"></div>-->
                         </div>
                         <div class="row">
                             <div class="col-md-6" style="height: 30px; border-right: 3px dashed white; border-bottom: 3px dashed white;"></div>
@@ -497,7 +501,7 @@ margin-right: auto;
 				clock = $('.clock').FlipClock(diff, {
 					clockFace: 'DailyCounter',
 					countdown: true,
-					showSeconds: true
+					showSeconds: false
 				});
 			});
 
