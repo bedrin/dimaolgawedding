@@ -530,7 +530,7 @@ box-shadow: 0 10px 20px rgba(0,0,0,.7);
 
             <div class="item" id="ourStory">
 
-                <div class="row" style="height: 100px">
+                <div class="row hidden-xs hidden-sm" style="height: 100px">
                     <div class="col-xs-4">
                         <div class="dashed" style="margin-top:41px"></div>
                     </div>
@@ -545,7 +545,11 @@ box-shadow: 0 10px 20px rgba(0,0,0,.7);
                         <div class="dashed" style="margin-top:41px"></div>
                     </div>
                 </div>
-                <!--<div class="top-buffer-22"></div>-->
+                <div class="hidden-md hidden-lg blue-background text-center fill-width">
+                    <h1 class="page-header">Our Story</h1>
+                </div>
+
+
                 <p>
                 Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
                 Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
@@ -556,7 +560,7 @@ box-shadow: 0 10px 20px rgba(0,0,0,.7);
             </div>
 
             <div class="item" id="gallery">
-                <div class="row" style="height: 100px">
+                <div class="row hidden-xs hidden-sm" style="height: 100px">
                     <div class="col-xs-4">
                         <div class="dashed" style="margin-top:41px"></div>
                     </div>
@@ -585,7 +589,7 @@ box-shadow: 0 10px 20px rgba(0,0,0,.7);
             </div>
 
             <div class="item" id="accommodations">
-                <div class="row" style="height: 100px">
+                <div class="row hidden-xs hidden-sm" style="height: 100px">
                     <div class="col-xs-3">
                         <div class="dashed" style="margin-top:41px"></div>
                     </div>
@@ -600,7 +604,9 @@ box-shadow: 0 10px 20px rgba(0,0,0,.7);
                         <div class="dashed" style="margin-top:41px"></div>
                     </div>
                 </div>
-                <!--<div class="top-buffer-22"></div>-->
+                <div class="hidden-md hidden-lg blue-background text-center fill-width">
+                    <h1 class="page-header">Accommodations</h1>
+                </div>
                 <p>
                     Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
                     Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
@@ -611,7 +617,7 @@ box-shadow: 0 10px 20px rgba(0,0,0,.7);
             </div>
 
             <div class="item" id="registry">
-                <div class="row" style="height: 100px">
+                <div class="row hidden-xs hidden-sm" style="height: 100px">
                     <div class="col-xs-4">
                         <div class="dashed" style="margin-top:41px"></div>
                     </div>
@@ -626,7 +632,6 @@ box-shadow: 0 10px 20px rgba(0,0,0,.7);
                         <div class="dashed" style="margin-top:41px"></div>
                     </div>
                 </div>
-                <!--<div class="top-buffer-22"></div>-->
                 <p>
                     Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
                     Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
@@ -652,7 +657,9 @@ box-shadow: 0 10px 20px rgba(0,0,0,.7);
                         <div class="dashed" style="margin-top:41px"></div>
                     </div>
                 </div>
-                <!--<div class="top-buffer-22"></div>-->
+                <div class="hidden-md hidden-lg blue-background text-center fill-width">
+                    <h1 class="page-header">Events</h1>
+                </div>
                 <p>
                     Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
                     Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
@@ -720,8 +727,10 @@ box-shadow: 0 10px 20px rgba(0,0,0,.7);
 
 
 
-$('.nav a').on('click', function(){
-    $(".navbar-toggle").click();
+$('.nav a').on('click', function() {
+    if ($(".navbar-toggle").is(":visible")) {
+        $(".navbar-toggle").click();
+    }
 });
 
 
