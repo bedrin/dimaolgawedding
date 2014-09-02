@@ -317,3 +317,30 @@ box-shadow: 0 10px 20px rgba(0,0,0,.7);
 .menu-title {
     color: white;
 }
+
+
+/* Box-sizing resets
+ *
+ * Reset individual elements or override regions to avoid conflicts due to
+ * global box model settings of Bootstrap. Two options, individual overrides and
+ * region resets, are available as plain CSS and uncompiled Less formats.
+ */
+
+/* Option 1A: Override a single element's box model via CSS */
+.element {
+  -webkit-box-sizing: content-box;
+     -moz-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+/* Option 1B: Override a single element's box model by using a Bootstrap Less mixin */
+.element {
+  .box-sizing(content-box);
+}
+
+.off-left_hide {
+    display: block !important;
+    position: absolute !important;
+    left: -10000px !important;
+    top: -10000px !important;
+}
