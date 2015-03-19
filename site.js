@@ -6,16 +6,27 @@ $(document).ready(function() {
 				// Set some date in the future. In this case, it's always Jan 1
 				var futureDate  = new Date(Date.UTC(2014, 8, 6 , 13, 0, 0));
 
-				// Calculate the difference in seconds between the future and current date
-				var diff = futureDate.getTime() / 1000 - currentDate.getTime() / 1000;
+        if (currentDate > futureDate) {
+          // Instantiate a coutdown FlipClock
+          clock = $('.clock').FlipClock(diff, {
+            clockFace: 'DailyCounter',
+            countdown: false,
+            autoStart: false,
+            showSeconds: false
+          });
 
-				// Instantiate a coutdown FlipClock
-				clock = $('.clock').FlipClock(diff, {
-					clockFace: 'DailyCounter',
-					countdown: true,
-					showSeconds: false
-				});
-			});
+        } else {
+  				// Calculate the difference in seconds between the future and current date
+  				var diff = futureDate.getTime() / 1000 - currentDate.getTime() / 1000;
+
+  				// Instantiate a coutdown FlipClock
+  				clock = $('.clock').FlipClock(diff, {
+  					clockFace: 'DailyCounter',
+  					countdown: true,
+  					showSeconds: false
+  				});
+        }
+      });
 
 
 
